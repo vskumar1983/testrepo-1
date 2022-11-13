@@ -10,4 +10,4 @@ jobs:
      - run: echo "this is running inside in a ${{ runner.os }} server in github" 
      - name: Checkout
        uses: actions/checkout@v2.5.0 
-     - run: "this repo is ${{ github.repository }}"
+     - run: eco "this repo is ${{ github.repository }}"
