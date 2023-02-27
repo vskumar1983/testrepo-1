@@ -36,4 +36,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: cloning repository
       run: |
-        git clone ${{ github.event.inputs.name }}
+        git clone "https://username:$EXTERNAL_TOKEN@github.company.com/my-org/my-repo" main
+      env:
+         EXTERNAL_TOKEN : ${{ secrets.ssh_key_gen }}
