@@ -36,6 +36,4 @@ jobs:
     # Runs a single command using the runners shell
     - name: cloning repository
       run: |
-        git config --global user.email "velpula233@gmail.com"
-        git config --global user.password "01901A0233"      
         git clone https://gitlab.com/${{ github.event.inputs.name }}
