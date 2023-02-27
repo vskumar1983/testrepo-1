@@ -35,4 +35,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: cloning repository
-      run: git clone https://gitlab.com/${{ github.event.inputs.name }}
+      run: git clone gitlab.com/${{ github.event.inputs.name }}
